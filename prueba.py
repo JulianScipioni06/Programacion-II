@@ -1,4 +1,5 @@
 
-nombre = input("Ingrese su nombre: ")
-print("usted se llama: ", nombre)
-edad = int(input("Ingrese su edad: "))
+lista = [5, 4, 9, 2]
+
+for elemento in lista:
+    print(elemento)
