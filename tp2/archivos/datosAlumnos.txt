@@ -1,0 +1,10 @@
+1005;Alvarez;Lucía
+1007;Benítez;Martín
+1009;Castro;Sofía
+1006;Domínguez;Hernán
+1008;Fernández;Valentina
+1002;Gómez;Laura
+1003;Martínez;Diego
+1010;Pérez;Camila
+1001;Ramírez;Juan
+1004;Torres;Mateo
