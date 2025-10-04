@@ -5,11 +5,17 @@ class TesterAutomovil:
     @staticmethod
     def test():
         divisor = "-"*60
-        auto1 = Automovil("Corolla","Toyota", 2020, 180.0, 0.0)
-        auto2 = Automovil("Mustang","Ford", 2022, 250.0, 50.0)
-        print(f"Datos Auto 1: \n {auto1.ObtenerModelo()} {auto1.ObtenerMarca()} {auto1.ObtenerAnio()} \n Velocidad Maxima: {auto1.ObtenerVelocidadMaxima()} \n Velocidad Actual: {auto1.ObtenerVelocidadActual()}")
+        auto1 = Automovil()
+        
+        auto1.EstablecerMarca(input("Ingrese la Marca del Vehiculo: "))
+        auto1.EstablecerModelo(input("Ingrese el Modelo del Vehiculo: "))
+        auto1.EstablecerAnio(int(rand.randint(1920,2025)))
+        auto1.EstablecerVelocidadMaxima(float(rand.randint(80,240)))
+        auto1.EstablecerVelocidadActual(float(rand.randint(0,240)))
+        
         print(divisor)
-        print(f"Datos Auto 2: \n {auto2.ObtenerModelo()} {auto2.ObtenerMarca()} {auto2.ObtenerAnio()} \n Velocidad Maxima: {auto2.ObtenerVelocidadMaxima()} \n Velocidad Actual: {auto2.ObtenerVelocidadActual()}")
+        print(auto1)
+        print(divisor)
         iteraciones = int(input("Cuantas Iteraciones quiere realizar? "))
         
         for i in range(iteraciones):
@@ -19,13 +25,15 @@ class TesterAutomovil:
             print(f"Iteracion Numero {i+1}({iteracion}):")
             
             if iteracion == 0:
+                incremento = rand.randint(5, 30)
                 print(f"Velocidad actual = {auto1.ObtenerVelocidadActual()} km/h")
-                auto1.Acelerar(20)
+                auto1.Acelerar(incremento)
                 print(f"Acción: Acelerar(20) → Velocidad actual = {auto1.ObtenerVelocidadActual()} km/h")
 
             elif iteracion == 1:
+                decremento = rand.randint(5, 30)
                 print(f"Velocidad actual = {auto1.ObtenerVelocidadActual()} km/h")
-                auto1.Desacelerar(15)
+                auto1.Desacelerar(decremento)
                 print(f"Acción: Desacelerar(15) → Velocidad actual = {auto1.ObtenerVelocidadActual()} km/h")
 
             elif iteracion == 2:
