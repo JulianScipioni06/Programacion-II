@@ -45,7 +45,7 @@ class TesterFecha:
 
         # Prueba de esAnterior
         print("5️⃣ Prueba de esAnterior()")
-        print(f"{f1} es anterior a {f2}? →", f1.esAnterior(f2))
+        print(f"{f2} es anterior a {f5}? →", f2.esAnterior(f5))
         print(f"{f4} es anterior a {f3}? →", f4.esAnterior(f3))
         print(f"{f3} es anterior a {f4}? →", f3.esAnterior(f4))
         print(divisor)
