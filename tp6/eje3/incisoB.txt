@@ -1,0 +1,4 @@
+print(C1 == C2) #False
+print(B1 == B2) #False
+print(C1.esIgualQue(C2)) #True
+print(B1.esIgualQue(B2)) #False
