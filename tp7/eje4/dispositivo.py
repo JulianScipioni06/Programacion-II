@@ -1,30 +1,27 @@
 class Dispositivo:
     def __init__(self, id:int, nombre:str, tipo:str):
         if not isinstance(id, int):
-            raise TypeError("ID debe ser entero")
+            raise TypeError("id debe ser entero")
         if id < 0:
-            raise ValueError("ID no debe ser negativo")
-        if not isinstance(nombre,str):
-            raise TypeError("Nombre debe ser string")
+            raise ValueError("id no debe ser negativo")
+        if not isinstance(nombre, str):
+            raise TypeError("nombre debe ser string")
         if nombre == "" or nombre.isspace():
-            raise ValueError("Nombre no debe estar vacio")
-        if not isinstance(tipo,str):
-            raise TypeError("Tipo debe ser string")
+            raise ValueError("nombre no debe estar vacio")
+        if not isinstance(tipo, str):
+            raise TypeError("tipo debe ser string")
         if tipo == "" or tipo.isspace():
-            raise ValueError("Tipo no debe estar vacio")
-        
+            raise ValueError("tipo no debe estar vacio")
         self.__id = id
         self.__nombre = nombre
         self.__tipo = tipo
-    
-    def obtenerId(self):
-        return self.__id
-    
+
     def obtenerNombre(self):
         return self.__nombre
     
-    def obtenerTipo(self):
-        return self.__tipo
-    
     def __str__(self):
-        return f"ID Dispositivo: {self.__id}\n Nombre: {self.__nombre}\n Tipo: {self.__tipo}\n"
+        return (
+            f"id: {self.__id}\n"
+            f"nombre: {self.__nombre}\n"
+            f"tipo: {self.__tipo}\n"
+        )

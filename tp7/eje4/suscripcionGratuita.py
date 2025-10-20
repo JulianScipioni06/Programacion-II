@@ -33,6 +33,17 @@ class SuscripcionGratuita(Suscripcion):
         print("Espacio Publicitario, para disfrutar de tiempo sin limites pasate al plan premium")
         self.__tiempoReproducido = 0
     
+    def habilitarDispositivo(self, dispositivo: Dispositivo):
+        if not isinstance(dispositivo, Dispositivo):
+            raise TypeError("dispositivo debe ser Dispositivo")
+        if not dispositivo in self.__dispositivos:
+            if len(self.__dispositivos) < self._pais.obtenerCantDispositivos():
+                self.__dispositivos.append(dispositivo)
+            else:
+                print("dispositivos maximos alcanzados")
+        else:
+            print("el dispositivo ya estab habilitado")
+    
     def __reproducirCancion(self, cancion:'Cancion'):
         cancion.reproducir()
         self.__tiempoReproducido += cancion.obtenerDuracion()
