@@ -32,5 +32,8 @@ class Suscripcion(ABC):
     def reproducirMusica(self, dispositivo:'Dispositivo', cancion: 'Cancion|None' = None, playlist: 'Playlist|None' = None):
         pass
     
+    def habilitarDispositivo(self, dispositivo: Dispositivo):
+        pass
+    
     def __str__(self):
-        return f"Nombre: {self._nombre}\n Email: {self._email}\n Telefono: {self._telefono}\n Pais: {self._pais.ontenerNombre()}\n"
+        return f"Nombre: {self._nombre}\n Email: {self._email}\n Telefono: {self._telefono}\n Pais: {self._pais.obtenerCantDispositivos()}\n"
