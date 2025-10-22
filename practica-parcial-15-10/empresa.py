@@ -20,7 +20,7 @@ class Empresa():
         for emp in self.__empleados:
             print(emp)
     
-    def empleadoConMasClientes(self) -> 'Empleado'|None:
+    def empleadoConMasClientes(self) -> 'Empleado':
         empConMasClientes = None
         maxClientes = -1
         for emp in self.__empleados:

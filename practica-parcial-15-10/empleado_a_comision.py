@@ -24,4 +24,4 @@ class EmpleadoAComision(Empleado):
         return self.__cantClientes
     
     def __str__(self):
-        return f"EMPLEADO A COMISION \n {super.__str__()}\n - Cant Clientes Captados: {self.__cantClientes}\n - Monto Por CLiente: {self.__montoPorCliente}\n - Salario Minimo: {self.__salarioMinimo}\n - Salario a Cobrar: {self.obtenerSalario()}"
+        return f"EMPLEADO A COMISION \n {super().__str__()}\n - Cant Clientes Captados: {self.__cantClientes}\n - Monto Por CLiente: {self.__montoPorCliente}\n - Salario Minimo: {self.__salarioMinimo}\n - Salario a Cobrar: {self.obtenerSalario()}"
