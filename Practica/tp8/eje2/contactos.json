@@ -1,0 +1,23 @@
+[
+    {
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "telefono": "1234",
+        "correo_electronico": "juanperez@gmail.com",
+        "direccion": "zelarrayan 646"
+    },
+    {
+        "nombre": "Martin",
+        "apellido": "Sanchez",
+        "telefono": "9999",
+        "correo_electronico": "martinsanchez@gmail.com",
+        "direccion": "salta 365"
+    },
+    {
+        "nombre": "Pedro",
+        "apellido": "Rodriguez",
+        "telefono": "7474",
+        "correo_electronico": "pedrorodriguez@gmail.com",
+        "direccion": "castelli 326"
+    }
+]

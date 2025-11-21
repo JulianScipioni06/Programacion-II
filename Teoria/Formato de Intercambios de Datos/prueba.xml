@@ -1,0 +1,17 @@
+<libros>
+    <libro>
+        <titulo>El hobbit</titulo>
+        <autor>J.R.R. Tolkien</autor>
+        <genero>Fantasía</genero>
+    </libro>
+    <libro>
+        <titulo>Cien años de soledad</titulo>
+        <autor>Gabriel García Márquez</autor>
+        <genero>Realismo mágico</genero>
+    </libro>
+    <libro>
+        <titulo>La Odisea</titulo>
+        <autor>Homero</autor>
+        <genero>Epopeya</genero>
+    </libro>
+</libros>
