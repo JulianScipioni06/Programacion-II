@@ -28,14 +28,16 @@ class Pizza:
         if not isinstance(horneada,bool):
             raise ValueError("horneada debe ser boolean")
         
-        if id != None:
-            self.__id = id
-        else:
+        if id is None:
             self.__id = Pizza.__obtenerUltimoId()
-            self.__nombre = nombre
-            self.__precio = precio
-            self.__puntuacion = puntuacion
-            self.__horneada = horneada
+        else:
+            self.__id = id
+
+        # ESTOS SIEMPRE TIENEN QUE ASIGNARSE
+        self.__nombre = nombre
+        self.__precio = precio
+        self.__puntuacion = puntuacion
+        self.__horneada = horneada
     
     #Comandos Triviales
     def establecerNombre(self, nombre:str):

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 2,
+        "nombre": "Fugazza",
+        "precio": 19000,
+        "puntuacion": 9,
+        "horneada": false
+    },
+    {
+        "id": 3,
+        "nombre": "Palmitos",
+        "precio": 21000,
+        "puntuacion": 10,
+        "horneada": true
+    }
+]

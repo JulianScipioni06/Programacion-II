@@ -2,7 +2,7 @@ from modelos.entidades.pizza import Pizza
 import json
 
 class RepositorioPizza:
-    FILE_PATH = r"C:\Users\July\Documents\Universidad\Segundo Cuatrimestre\Programacion-II\Practica\practica-13-11\datos\pizzas.json"
+    FILE_PATH = r"D:\UNIVERSIDAD\SegundoCuatrimestre\Programacion-II\Practica\practica-13-11\datos\pizzas.json"
     
     def __init__(self):
         self.__pizzas = self.__cargarTodas()
@@ -12,7 +12,6 @@ class RepositorioPizza:
         try:
             with open(RepositorioPizza.FILE_PATH, "r") as file:
                 datos = json.load(file)
-
                 for p in datos:
                     lista_pizzas.append(Pizza.fromDiccionario(p))
         except FileNotFoundError:
@@ -36,7 +35,7 @@ class RepositorioPizza:
     def obtenerTodas(self):
         return self.__pizzas
     
-    def obtenerPorId(self, id:int) -> 'Pizza' | None:
+    def obtenerPorId(self, id:int) -> Pizza | None:
         for p in self.__pizzas:
             if isinstance(p,Pizza):
                 if p.obtenerId() == id:
@@ -81,5 +80,3 @@ class RepositorioPizza:
             self.__guardarTodas()
             return True
         return False
-    
-    #SEGUIR EN MIN 49 DE CLASE
