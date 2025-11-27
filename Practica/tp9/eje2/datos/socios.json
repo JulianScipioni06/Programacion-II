@@ -1,0 +1,23 @@
+[
+    {
+        "dni": 35123456,
+        "nombre": "Julian",
+        "apellido": "Perez",
+        "mail": "julian.perez@email.com",
+        "fecha_nacimiento": "1990-05-15"
+    },
+    {
+        "dni": 40987654,
+        "nombre": "Maria",
+        "apellido": "Gomez",
+        "mail": "maria.gomez@email.com",
+        "fecha_nacimiento": "1998-10-20"
+    },
+    {
+        "dni": 28456789,
+        "nombre": "Carlos",
+        "apellido": "Rodriguez",
+        "mail": "carlos.rod@email.com",
+        "fecha_nacimiento": "1981-03-12"
+    }
+]
